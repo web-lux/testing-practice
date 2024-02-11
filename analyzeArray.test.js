@@ -16,7 +16,7 @@ describe("arrayInformations", () => {
     })
 
     it("should_return_an_object_with_info_about_array", () => {
-        expect(analyzeArray(arrayToAnalyze)).toBe({
+        expect(analyzeArray(arrayToAnalyze)).toStrictEqual({
             average: 4,
             min: 1,
             max: 8,

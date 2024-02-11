@@ -15,12 +15,18 @@ function getMin(array: number[]): number {
     return min;
 }
 
-function getMax() {
-
+function getMax(array: number[]): number {
+    const max = array.reduce((prev, current) => prev > current ? prev : current);
+    return max;
 }
 
 function analyzeArray(array: number[]): ArrayInformations {
-
+    return {
+        average: getAverage(array),
+        min: getMin(array),
+        max: getMax(array),
+        length: array.length,
+    }
 }
 
 export {
