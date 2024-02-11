@@ -10,8 +10,9 @@ function getAverage(array: number[]): number {
     return sum / array.length;
 }
 
-function getMin() {
-
+function getMin(array: number[]): number {
+    const min = array.reduce((prev, current) => prev < current ? prev : current);
+    return min;
 }
 
 function getMax() {
